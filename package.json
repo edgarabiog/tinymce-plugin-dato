@@ -1,17 +1,38 @@
 {
-  "name": "tinymce-plugin",
-  "version": "0.1.0",
-  "private": true,
+  "name": "datocms-plugin-tinymce-rich-text",
+  "homepage": "https://github.com/datocms/plugins/tree/master/rich-text-tinymce#readme",
+  "description": "Custom TinyMCE HTML editor",
+  "version": "0.1.9",
+  "author": "DatoCMS <support@datocms.com>",
+  "license": "ISC",
+  "keywords": [
+    "datocms",
+    "datocms-plugin",
+    "field-editor",
+    "text-field",
+    "wysiwyg",
+    "rich-text"
+  ],
+  "files": [
+    "docs",
+    "build"
+  ],
   "dependencies": {
-    "@types/node": "^18.17.14",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "datocms-plugin-sdk": "^0.7.14",
-    "datocms-react-ui": "^0.7.14",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5"
+    "@tinymce/tinymce-react": "^3.13.0",
+    "@types/node": "^16.11.14",
+    "@types/qs": "^6.9.7",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/tinymce": "^4.6.4",
+    "datocms-plugin-sdk": "^0.5.2",
+    "datocms-react-ui": "^0.5.2",
+    "lodash": "^4.17.21",
+    "qs": "^6.10.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "tinymce": "^5.10.7",
+    "typescript": "^4.5.4"
   },
   "scripts": {
     "start": "cross-env BROWSER='none' PUBLIC_URL='/' react-scripts start",
@@ -38,12 +59,13 @@
     ]
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.178",
     "cross-env": "^7.0.3"
   },
   "datoCmsPlugin": {
-    "title": "",
-    "previewImage": "",
-    "coverImage": "",
+    "title": "TinyMCE Editor",
+    "previewImage": "docs/rich-editor-plugin-preview.png",
+    "coverImage": "docs/cover.png",
     "entryPoint": "build/index.html"
   }
 }
