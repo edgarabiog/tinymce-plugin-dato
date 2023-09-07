@@ -39,7 +39,7 @@ connect({
     return [
       {
         id: 'tinymce',
-        name: 'TinyMCE',
+        name: 'Custom TinyMCE',
         type: 'editor',
         fieldTypes: ['text'] as NonNullable<PluginAttributes['field_types']>,
       },
